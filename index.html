@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -15,19 +16,30 @@
 
     header {
       background: #0b1f3a;
-      padding: 20px;
       text-align: center;
+      padding: 25px 20px;
       border-bottom: 5px solid #c8a64d;
     }
 
     header h1 {
       color: white;
       margin: 0;
-      font-size: 36px;
+      font-size: 38px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    header h1 img {
+      width: 60px;
+      height: auto;
     }
 
     nav {
-      margin-top: 15px;
+      margin-top: 18px;
     }
 
     nav a {
@@ -111,34 +123,35 @@
       margin-top: 40px;
       border-top: 5px solid #c8a64d;
     }
+
   </style>
 </head>
 
 <body>
+
 <header>
 
-
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#priorities">Priorities</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </div>
-
-  <div class="badge">
+  <h1>
+    Brad Klippert for Benton County Sheriff
 
     <img src="badge.png.png">
 
-  </div>
+  </h1>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#priorities">Priorities</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
 </header>
 
 <div class="hero" id="home">
 
-  <h2>Proven Leadership. Safer Communities.</h2>
+  <h2>
+    Proven Leadership. Safer Communities.
+  </h2>
 
   <p>
     Experienced. Trusted. Ready to serve Benton County.
@@ -156,7 +169,9 @@
 
 <div class="section">
 
-  <h2 id="about">About Brad</h2>
+  <h2 id="about">
+    About Brad
+  </h2>
 
   <div class="card">
 
@@ -178,7 +193,9 @@
 
   </div>
 
-  <h2 id="priorities">Priorities</h2>
+  <h2 id="priorities">
+    Priorities
+  </h2>
 
   <div class="card">
     ✔ Strengthen public safety and community policing
@@ -196,7 +213,9 @@
     ✔ Build trust through leadership, accountability, and service
   </div>
 
-  <h2 id="contact">Get Involved</h2>
+  <h2 id="contact">
+    Get Involved
+  </h2>
 
   <div class="card">
 
@@ -213,9 +232,11 @@
 </div>
 
 <footer>
+
   <p>
     Paid for by Brad Klippert for Sheriff
   </p>
+
 </footer>
 
 </body>
