@@ -34,17 +34,21 @@
     }
 
     header h1 img {
-     width: 250px;
+      width: 90px;
       height: auto;
     }
 
     nav {
       margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: #c8a64d;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
@@ -52,6 +56,11 @@
 
     nav a:hover {
       color: white;
+    }
+
+    .social-icon {
+      width: 28px;
+      vertical-align: middle;
     }
 
     .hero {
@@ -139,10 +148,31 @@
   </h1>
 
   <nav>
+
     <a href="#home">Home</a>
+
     <a href="#about">About</a>
+
     <a href="#priorities">Priorities</a>
+
     <a href="#contact">Contact</a>
+
+    <a href="https://www.facebook.com/share/19qyConXNx/?mibextid=wwXIfr"
+       target="_blank">
+
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+           class="social-icon">
+
+    </a>
+
+    <a href="https://www.instagram.com/brad.klippert4sheriff?utm_source=qr"
+       target="_blank">
+
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+           class="social-icon">
+
+    </a>
+
   </nav>
 
 </header>
