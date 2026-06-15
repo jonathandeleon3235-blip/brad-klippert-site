@@ -25,7 +25,6 @@
       color: white;
       margin: 0;
       font-size: 38px;
-
       display: flex;
       align-items: center;
       justify-content: center;
@@ -124,6 +123,42 @@
       line-height: 1.7;
     }
 
+    .testimonial-card {
+      max-width: 760px;
+      min-height: 420px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #quote {
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    #author {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .testimonial-buttons {
+      margin-top: 20px;
+    }
+
+    .testimonial-buttons button {
+      margin: 0 8px;
+      padding: 10px 18px;
+      font-size: 16px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
     footer {
       background: #0b1f3a;
       color: white;
@@ -142,9 +177,7 @@
 
   <h1>
     Brad Klippert for Benton County Sheriff
-
     <img src="badge.png.png">
-
   </h1>
 
   <nav>
@@ -155,22 +188,16 @@
 
     <a href="#priorities">Priorities</a>
 
+    <a href="#testimonials">Testimonials</a>
+
     <a href="#contact">Contact</a>
 
-    <a href="https://www.facebook.com/share/19qyConXNx/?mibextid=wwXIfr"
-       target="_blank">
-
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-           class="social-icon">
-
+    <a href="https://www.facebook.com/share/19qyConXNx/?mibextid=wwXIfr" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="social-icon">
     </a>
 
-    <a href="https://www.instagram.com/brad.klippert4sheriff?utm_source=qr"
-       target="_blank">
-
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-           class="social-icon">
-
+    <a href="https://www.instagram.com/brad.klippert4sheriff?utm_source=qr" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="social-icon">
     </a>
 
   </nav>
@@ -192,7 +219,7 @@
   <br>
 
   <button onclick="window.location.href='https://www.zeffy.com/en-US/donation-form/brad-klippert-4-sheriff'">
-   Support the Campaign
+    Support the Campaign
   </button>
 
 </div>
@@ -226,75 +253,7 @@
   <h2 id="priorities">
     Priorities
   </h2>
-Thought for a couple of seconds
 
-<h2 id="testimonials">
-  Community Testimonials
-</h2>
-
-<div class="card" style="max-width:700px; margin:auto; text-align:center;">
-
-  <p style="font-size:22px; color:#c8a64d;">
-    ★★★★★
-  </p>
-
-  <p id="quote" style="font-style:italic;">
-    "I have known Deputy Brad Klippert for 29 years and know him to be honest, trustworthy, and deeply committed to the people around him."
-  </p>
-
-  <p id="author">
-    <strong>— Mikaela Strech</strong><br>
-    Kiona-Benton School Community Member
-  </p>
-
-  <button onclick="previousTestimonial()">←</button>
-  <button onclick="nextTestimonial()">→</button>
-
-</div>
-
-<script>
-
-const testimonials = [
-
-{
-quote: "I have known Deputy Brad Klippert for 29 years and know him to be honest, trustworthy, and deeply committed to the people around him.",
-author: "Mikaela Strech<br>Kiona-Benton School Community Member"
-},
-
-{
-quote: "PLACE YOUR SECOND TESTIMONIAL HERE",
-author: "Name Here"
-},
-
-{
-quote: "PLACE YOUR THIRD TESTIMONIAL HERE",
-author: "Name Here"
-}
-
-];
-
-let current = 0;
-
-function showTestimonial() {
-document.getElementById('quote').innerHTML =
-'"' + testimonials[current].quote + '"';
-
-document.getElementById('author').innerHTML =
-'<strong>— ' + testimonials[current].author + '</strong>';
-}
-
-function nextTestimonial() {
-current = (current + 1) % testimonials.length;
-showTestimonial();
-}
-
-function previousTestimonial() {
-current = (current - 1 + testimonials.length) % testimonials.length;
-showTestimonial();
-}
-
-</script>
-</div>
   <div class="card">
     ✔ Strengthen public safety and community policing
   </div>
@@ -309,6 +268,36 @@ showTestimonial();
 
   <div class="card">
     ✔ Build trust through leadership, accountability, and service
+  </div>
+
+  <h2 id="testimonials">
+    Community Testimonials
+  </h2>
+
+  <div class="card testimonial-card">
+
+    <p style="font-size:22px; color:#c8a64d; text-align:center;">
+      ★★★★★
+    </p>
+
+    <p id="quote">
+      I have known Deputy Brad Klippert for 29 years, and I know him to be an honest and trustworthy individual. I have had the privilege to work with Brad Klippert at Kiona-Benton High School for the past two years. He is always checking in on me to see how my children and I are doing. I am just a janitor at the school, but he sees me and makes time in his day for me.
+      <br><br>
+      Deputy Brad Klippert has always demonstrated exceptional leadership, professionalism, and dedication. Deputy Klippert has successfully led careers in the Army National Guard, where he achieved the rank of Colonel, as a Sheriff Deputy for the Benton County Sheriff’s Office, and through 14 years in the state legislature.
+      <br><br>
+      His ability to communicate effectively, solve complex problems, work under pressure, and teach students around him with kindness and love for his community fully qualifies him to serve as Sheriff. I fully support his decision in running for Benton County Sheriff and am confident he will excel in leading the men and women of the Benton County Sheriff’s Office.
+    </p>
+
+    <p id="author">
+      <strong>— Mikaela Strech</strong><br>
+      Kiona-Benton School Community Member
+    </p>
+
+    <div class="testimonial-buttons">
+      <button onclick="previousTestimonial()">←</button>
+      <button onclick="nextTestimonial()">→</button>
+    </div>
+
   </div>
 
   <h2 id="contact">
@@ -403,6 +392,37 @@ showTestimonial();
   </p>
 
 </footer>
+
+<script>
+
+  const testimonials = [
+    {
+      quote: `I have known Deputy Brad Klippert for 29 years, and I know him to be an honest and trustworthy individual. I have had the privilege to work with Brad Klippert at Kiona-Benton High School for the past two years. He is always checking in on me to see how my children and I are doing. I am just a janitor at the school, but he sees me and makes time in his day for me.<br><br>Deputy Brad Klippert has always demonstrated exceptional leadership, professionalism, and dedication. Deputy Klippert has successfully led careers in the Army National Guard, where he achieved the rank of Colonel, as a Sheriff Deputy for the Benton County Sheriff’s Office, and through 14 years in the state legislature.<br><br>His ability to communicate effectively, solve complex problems, work under pressure, and teach students around him with kindness and love for his community fully qualifies him to serve as Sheriff. I fully support his decision in running for Benton County Sheriff and am confident he will excel in leading the men and women of the Benton County Sheriff’s Office.`,
+      author: `<strong>— Mikaela Strech</strong><br>Kiona-Benton School Community Member`
+    }
+  ];
+
+  let current = 0;
+
+  function showTestimonial() {
+    document.getElementById('quote').innerHTML = testimonials[current].quote;
+    document.getElementById('author').innerHTML = testimonials[current].author;
+  }
+
+  function nextTestimonial() {
+    current = (current + 1) % testimonials.length;
+    showTestimonial();
+  }
+
+  function previousTestimonial() {
+    current = (current - 1 + testimonials.length) % testimonials.length;
+    showTestimonial();
+  }
+
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
