@@ -228,45 +228,72 @@
   </h2>
 Thought for a couple of seconds
 
-Paste this between the Priorities section and Get Involved section:
-
 <h2 id="testimonials">
   Community Testimonials
 </h2>
 
-<div class="card" style="text-align:center;">
+<div class="card" style="max-width:700px; margin:auto; text-align:center;">
 
-  <h3>
-    What People Are Saying
-  </h3>
+  <p style="font-size:22px; color:#c8a64d;">
+    ★★★★★
+  </p>
 
-  <div id="testimonial-box">
+  <p id="quote" style="font-style:italic;">
+    "I have known Deputy Brad Klippert for 29 years and know him to be honest, trustworthy, and deeply committed to the people around him."
+  </p>
 
-    <p style="font-size:22px; color:#c8a64d;">
-      ★★★★★
-    </p>
+  <p id="author">
+    <strong>— Mikaela Strech</strong><br>
+    Kiona-Benton School Community Member
+  </p>
 
-    <p style="font-style:italic;">
-      “I have known Deputy Brad Klippert for 29 years, and I know him to be honest, trustworthy, and deeply committed to the people around him.
-      <br><br>
-      I have had the privilege of working with Brad at Kiona-Benton High School. Even though I work as a janitor at the school, Brad always makes time to check in on me and ask how my children and I are doing. He sees people, values them, and treats them with kindness and respect.
-      <br><br>
-      Deputy Klippert has demonstrated exceptional leadership, professionalism, and dedication throughout his career in law enforcement, military service, and public office. His ability to communicate, solve problems, work under pressure, and lead with compassion makes him well qualified to serve as Benton County Sheriff.
-      <br><br>
-      I fully support Brad Klippert for Benton County Sheriff and believe he will do an excellent job leading the men and women of the Benton County Sheriff’s Office.”
-    </p>
+  <button onclick="previousTestimonial()">←</button>
+  <button onclick="nextTestimonial()">→</button>
 
-    <p>
-      <strong>— Mikaela Strech</strong><br>
-      Kiona-Benton School Community Member
-    </p>
+</div>
 
-  </div>
+<script>
 
-  <button onclick="alert('More testimonials coming soon.')">
-    Next Testimonial
-  </button>
+const testimonials = [
 
+{
+quote: "I have known Deputy Brad Klippert for 29 years and know him to be honest, trustworthy, and deeply committed to the people around him.",
+author: "Mikaela Strech<br>Kiona-Benton School Community Member"
+},
+
+{
+quote: "PLACE YOUR SECOND TESTIMONIAL HERE",
+author: "Name Here"
+},
+
+{
+quote: "PLACE YOUR THIRD TESTIMONIAL HERE",
+author: "Name Here"
+}
+
+];
+
+let current = 0;
+
+function showTestimonial() {
+document.getElementById('quote').innerHTML =
+'"' + testimonials[current].quote + '"';
+
+document.getElementById('author').innerHTML =
+'<strong>— ' + testimonials[current].author + '</strong>';
+}
+
+function nextTestimonial() {
+current = (current + 1) % testimonials.length;
+showTestimonial();
+}
+
+function previousTestimonial() {
+current = (current - 1 + testimonials.length) % testimonials.length;
+showTestimonial();
+}
+
+</script>
 </div>
   <div class="card">
     ✔ Strengthen public safety and community policing
