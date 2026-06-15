@@ -6,147 +6,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #222;
-    }
+    body { margin:0; font-family:Arial,sans-serif; background:#f4f4f4; color:#222; }
 
     header {
-      background: #0b1f3a;
-      text-align: center;
-      padding: 25px 20px;
-      border-bottom: 5px solid #c8a64d;
+      background:#0b1f3a;
+      text-align:center;
+      padding:25px 20px;
+      border-bottom:5px solid #c8a64d;
     }
 
     header h1 {
-      color: white;
-      margin: 0;
-      font-size: 38px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-header h1 img {
-  width: 140px;
-  height: auto;
-}
+      color:white;
+      margin:0;
+      font-size:36px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .badge-logo {
+      width:90px;
+      max-width:90px;
+      height:auto;
+    }
 
     nav {
-      margin-top: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      margin-top:18px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
     }
 
     nav a {
-      color: #c8a64d;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      color: white;
+      color:#c8a64d;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:18px;
     }
 
     .social-icon {
-      width: 28px;
-      vertical-align: middle;
+      width:28px;
+      max-width:28px;
+      height:auto;
     }
 
     .hero {
-      background: linear-gradient(to right, #0b1f3a, #1e3a5f);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
+      background:linear-gradient(to right,#0b1f3a,#1e3a5f);
+      color:white;
+      text-align:center;
+      padding:60px 20px;
     }
 
-    .hero h2 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+    .hero h2 { font-size:46px; margin-bottom:10px; }
+    .hero p { font-size:22px; margin-bottom:25px; }
 
-    .hero p {
-      font-size: 22px;
-      margin-bottom: 25px;
-    }
-
-    .hero img {
-      width: 240px;
-      border-radius: 12px;
-      border: 4px solid #c8a64d;
-      margin-bottom: 25px;
+    .brad-photo {
+      width:240px;
+      max-width:240px;
+      height:auto;
+      border-radius:12px;
+      border:4px solid #c8a64d;
+      margin-bottom:25px;
     }
 
     button {
-      background: #c8a64d;
-      color: #0b1f3a;
-      border: none;
-      padding: 14px 28px;
-      font-size: 18px;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
+      background:#c8a64d;
+      color:#0b1f3a;
+      border:none;
+      padding:14px 28px;
+      font-size:18px;
+      border-radius:6px;
+      font-weight:bold;
+      cursor:pointer;
+      margin:6px;
     }
 
-    button:hover {
-      background: #e0bc5c;
-    }
-
-    .section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 50px 20px;
-    }
+    .section { max-width:1000px; margin:auto; padding:50px 20px; }
 
     .section h2 {
-      color: #0b1f3a;
-      border-bottom: 3px solid #c8a64d;
-      padding-bottom: 10px;
-      margin-bottom: 25px;
+      color:#0b1f3a;
+      border-bottom:3px solid #c8a64d;
+      padding-bottom:10px;
+      margin-bottom:25px;
     }
 
     .card {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      line-height: 1.7;
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      margin-bottom:20px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      line-height:1.7;
     }
 
     .testimonial-card {
-      max-width: 760px;
-      margin: auto;
-      text-align: center;
+      max-width:760px;
+      margin:auto;
+      text-align:center;
     }
 
     .testimonial-text {
-      font-style: italic;
-      font-size: 17px;
-      line-height: 1.7;
-      text-align: left;
+      font-style:italic;
+      font-size:17px;
+      line-height:1.7;
+      text-align:left;
     }
 
-    form input,
-    form select,
-    form textarea {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
+    form input, form select, form textarea {
+      font-family:Arial,sans-serif;
+      font-size:16px;
     }
 
     footer {
-      background: #0b1f3a;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-      border-top: 5px solid #c8a64d;
+      background:#0b1f3a;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+      border-top:5px solid #c8a64d;
     }
   </style>
 </head>
@@ -154,10 +135,9 @@ header h1 img {
 <body>
 
 <header>
-
   <h1>
     Brad Klippert for Benton County Sheriff
-    <img src="badge.png.png">
+    <img src="badge.png.png" class="badge-logo">
   </h1>
 
   <nav>
@@ -174,76 +154,44 @@ header h1 img {
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="social-icon">
     </a>
   </nav>
-
 </header>
 
 <div class="hero" id="home">
-
   <h2>Proven Leadership. Safer Communities.</h2>
-
   <p>Experienced. Trusted. Ready to serve Benton County.</p>
 
-  <img src="brad.jpg.jpeg">
+  <img src="brad.jpg.jpeg" class="brad-photo">
 
   <br>
 
   <button onclick="window.location.href='https://www.zeffy.com/en-US/donation-form/brad-klippert-4-sheriff'">
     Support the Campaign
   </button>
-<br><br>
 
-<button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScvHspI-yKoR9OG_zZ0Whv69MmsCHcOkvuvjuOlIHTPqMkImw/viewform?usp=sharing&ouid=109031404316361652092'">
-  Request a Yard Sign
-</button>
+  <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScvHspI-yKoR9OG_zZ0Whv69MmsCHcOkvuvjuOlIHTPqMkImw/viewform?usp=sharing&ouid=109031404316361652092'">
+    Request a Yard Sign
+  </button>
 </div>
 
 <div class="section">
 
   <h2 id="about">About Brad</h2>
-
   <div class="card">
-    <p>
-      Brad Klippert has dedicated his life to serving the people of Benton County, Washington State, and our nation through law enforcement, military leadership, and public service. Brad has served as a Benton County Sheriff’s Deputy since 1999, with experience in patrol, investigations, community safety, and as a School Resource Officer for the Kiona-Benton City School District. Prior to joining Benton County, he also served as a deputy in Pierce County.
-    </p>
-
-    <p>
-      In addition to his law enforcement career, Brad served more than 30 years in the military, including 20 years as a helicopter pilot, retiring as a Colonel and Commander in the Washington State Guard. His leadership experience includes emergency response coordination, personnel management, and operational command.
-    </p>
-
-    <p>
-      Brad also represented Washington’s 8th Legislative District for 14 years in the Washington State House of Representatives, where he worked on public safety, criminal justice, veterans’ affairs, and education issues.
-    </p>
-
-    <p>
-      A longtime Kennewick resident, Brad’s career has been built on service, leadership, and a commitment to safer communities throughout Benton County.
-    </p>
+    <p>Brad Klippert has dedicated his life to serving the people of Benton County, Washington State, and our nation through law enforcement, military leadership, and public service. Brad has served as a Benton County Sheriff’s Deputy since 1999, with experience in patrol, investigations, community safety, and as a School Resource Officer for the Kiona-Benton City School District. Prior to joining Benton County, he also served as a deputy in Pierce County.</p>
+    <p>In addition to his law enforcement career, Brad served more than 30 years in the military, including 20 years as a helicopter pilot, retiring as a Colonel and Commander in the Washington State Guard. His leadership experience includes emergency response coordination, personnel management, and operational command.</p>
+    <p>Brad also represented Washington’s 8th Legislative District for 14 years in the Washington State House of Representatives, where he worked on public safety, criminal justice, veterans’ affairs, and education issues.</p>
+    <p>A longtime Kennewick resident, Brad’s career has been built on service, leadership, and a commitment to safer communities throughout Benton County.</p>
   </div>
 
   <h2 id="priorities">Priorities</h2>
-
-  <div class="card">
-    ✔ Strengthen public safety and community policing
-  </div>
-
-  <div class="card">
-    ✔ Support law enforcement recruitment and retention
-  </div>
-
-  <div class="card">
-    ✔ Protect Benton County families and neighborhoods
-  </div>
-
-  <div class="card">
-    ✔ Build trust through leadership, accountability, and service
-  </div>
+  <div class="card">✔ Strengthen public safety and community policing</div>
+  <div class="card">✔ Support law enforcement recruitment and retention</div>
+  <div class="card">✔ Protect Benton County families and neighborhoods</div>
+  <div class="card">✔ Build trust through leadership, accountability, and service</div>
 
   <h2>Community Testimonials</h2>
-
   <div class="card testimonial-card">
-
-    <p style="font-size:22px; color:#c8a64d; text-align:center;">
-      ★★★★★
-    </p>
+    <p style="font-size:22px; color:#c8a64d;">★★★★★</p>
 
     <p class="testimonial-text">
       I have known Deputy Brad Klippert for 29 years, and I know him to be an honest and trustworthy individual. I have had the privilege to work with Brad Klippert at Kiona-Benton High School for the past two years. He is always checking in on me to see how my children and I are doing. I am just a janitor at the school, but he sees me and makes time in his day for me.
@@ -253,73 +201,34 @@ header h1 img {
       His ability to communicate effectively, solve complex problems, work under pressure, and teach students around him with kindness and love for his community fully qualifies him to serve as Sheriff. I fully support his decision in running for Benton County Sheriff and am confident he will excel in leading the men and women of the Benton County Sheriff’s Office.
     </p>
 
-    <p>
-      <strong>— Mikaela Strech</strong><br>
-      Kiona-Benton School Community Member
-    </p>
-
+    <p><strong>— Mikaela Strech</strong><br>Kiona-Benton School Community Member</p>
   </div>
 
   <h2 id="contact">Get Involved</h2>
-
   <div class="card">
-
     <h3>Volunteer for the Campaign</h3>
-
-    <p>
-      Join Brad Klippert’s campaign team and help support safer communities throughout Benton County.
-    </p>
-
-    <p>
-      Email: Bradklippert4sheriff@gmail.com
-    </p>
-
-    <p>
-      Mailing Address: P.O. Box 5323, Kennewick, WA 99336
-    </p>
+    <p>Join Brad Klippert’s campaign team and help support safer communities throughout Benton County.</p>
+    <p>Email: Bradklippert4sheriff@gmail.com</p>
+    <p>Mailing Address: P.O. Box 5323, Kennewick, WA 99336</p>
 
     <form action="https://formspree.io/f/xojbpygd" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+      <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+      <input type="text" name="phone" placeholder="Phone Number" style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
 
-      <input type="text"
-             name="name"
-             placeholder="Full Name"
-             required
-             style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
-
-      <input type="email"
-             name="email"
-             placeholder="Email Address"
-             required
-             style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
-
-      <input type="text"
-             name="phone"
-             placeholder="Phone Number"
-             style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
-
-      <select name="interest"
-              required
-              style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
-
+      <select name="interest" required style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
         <option value="">How would you like to help?</option>
         <option>Door Knocking</option>
         <option>Yard Signs</option>
         <option>Phone Calls</option>
         <option>Campaign Events</option>
         <option>General Volunteer</option>
-
       </select>
 
-      <textarea name="message"
-                placeholder="Message"
-                style="width:100%; padding:14px; height:140px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;"></textarea>
+      <textarea name="message" placeholder="Message" style="width:100%; padding:14px; height:140px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;"></textarea>
 
-      <button type="submit">
-        Volunteer Now
-      </button>
-
+      <button type="submit">Volunteer Now</button>
     </form>
-
   </div>
 
 </div>
