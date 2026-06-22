@@ -183,20 +183,80 @@
   <div class="card">✔ Protect Benton County families and neighborhoods</div>
   <div class="card">✔ Build trust through leadership, accountability, and service</div>
 
-  <h2 id="endorsements">Community Endorsements</h2>
-  <div class="card">
-    <p style="font-size:22px; color:#c8a64d;">★★★★★</p>
+<h2 id="endorsements">Endorsements</h2>
 
-    <p class="testimonial-text">
-      I have known Deputy Brad Klippert for 29 years, and I know him to be an honest and trustworthy individual. I have had the privilege to work with Brad Klippert at Kiona-Benton High School for the past two years. He is always checking in on me to see how my children and I are doing. I am just a janitor at the school, but he sees me and makes time in his day for me.
-      <br><br>
-      Deputy Brad Klippert has always demonstrated exceptional leadership, professionalism, and dedication. Deputy Klippert has successfully led careers in the Army National Guard, where he achieved the rank of Colonel, as a Sheriff Deputy for the Benton County Sheriff’s Office, and through 14 years in the state legislature.
-      <br><br>
-      His ability to communicate effectively, solve complex problems, work under pressure, and teach students around him with kindness and love for his community fully qualifies him to serve as Sheriff. I fully support his decision in running for Benton County Sheriff and am confident he will excel in leading the men and women of the Benton County Sheriff’s Office.
-    </p>
+<div class="card" style="text-align:center;">
 
-    <p><strong>— Mikaela Strech</strong><br>Kiona-Benton School Community Member</p>
-  </div>
+  <div id="endorsement-content"></div>
+
+  <button onclick="previousEndorsement()">←</button>
+  <button onclick="nextEndorsement()">→</button>
+
+</div>
+
+<script>
+
+const endorsements = [
+
+{
+type: "image",
+image: "klippert.png",
+title: "Stand For Health Freedom",
+text: "Endorses Brad Klippert for Benton County Sheriff."
+},
+
+{
+type: "text",
+title: "Mikaela Strech",
+text: `I have known Deputy Brad Klippert for 29 years, and I know him to be an honest and trustworthy individual. I have had the privilege to work with Brad Klippert at Kiona-Benton High School for the past two years. He is always checking in on me to see how my children and I are doing. I am just a janitor at the school, but he sees me and makes time in his day for me.
+
+Deputy Brad Klippert has always demonstrated exceptional leadership, professionalism, and dedication. Deputy Klippert has successfully led careers in the Army National Guard, where he achieved the rank of Colonel, as a Sheriff Deputy for the Benton County Sheriff's Office, and through 14 years in the state legislature.
+
+His ability to communicate effectively, solve complex problems, work under pressure, and teach students around him with kindness and love for his community fully qualifies him to serve as Sheriff. I fully support his decision in running for Benton County Sheriff and am confident he will excel in leading the men and women of the Benton County Sheriff's Office.`
+}
+
+];
+
+let currentEndorsement = 0;
+
+function showEndorsement() {
+
+const item = endorsements[currentEndorsement];
+
+if(item.type === "image") {
+
+document.getElementById("endorsement-content").innerHTML = `
+<img src="${item.image}" style="max-width:450px; width:100%; border-radius:10px; margin-bottom:20px;">
+<h3>${item.title}</h3>
+<p>${item.text}</p>
+`;
+
+} else {
+
+document.getElementById("endorsement-content").innerHTML = `
+<h3>${item.title}</h3>
+<p style="text-align:left; line-height:1.8;">
+${item.text}
+</p>
+`;
+
+}
+
+}
+
+function nextEndorsement() {
+currentEndorsement = (currentEndorsement + 1) % endorsements.length;
+showEndorsement();
+}
+
+function previousEndorsement() {
+currentEndorsement = (currentEndorsement - 1 + endorsements.length) % endorsements.length;
+showEndorsement();
+}
+
+showEndorsement();
+
+</script>
 
   <h2 id="contact">Get Involved</h2>
   <div class="card">
