@@ -180,7 +180,74 @@
   <div class="card">✔ Proteger a las familias y vecindarios del condado de Benton</div>
   <div class="card">✔ Construir confianza mediante liderazgo, responsabilidad y servicio</div>
 
-  <h2 id="endorsements">Endoso</h2>
+ <h2 id="endorsements">Endoso</h2>
+
+<div class="card" style="text-align:center;">
+
+  <div id="endorsement-content"></div>
+
+  <button onclick="previousEndorsement()">←</button>
+  <button onclick="nextEndorsement()">→</button>
+
+</div>
+
+<script>
+
+const endorsements = [
+
+{
+type: "image",
+image: "Klippert.png",
+title: "Stand For Health Freedom",
+text: "Respalda a Brad Klippert para Sheriff del Condado de Benton."
+},
+
+{
+type: "text",
+title: "Mikaela Strech",
+text: `Respaldo a Brad Klippert para el cargo de Sheriff del Condado de Benton. He conocido al oficial Klippert durante 29 años y siempre lo he considerado una persona honesta y digna de confianza. He tenido el privilegio de trabajar con Brad Klippert en Kiona-Benton High School durante los últimos dos años. Siempre se acerca a preguntarme cómo estamos mis hijos y yo. Aunque yo solo soy la conserje de la escuela, él me ve de verdad y siempre se toma un momento de su día para dedicarme tiempo.
+
+El oficial Brad Klippert siempre ha demostrado un liderazgo, profesionalismo y dedicación excepcionales. El oficial Klippert ha desarrollado con éxito una carrera en la Guardia Nacional del Ejército, donde alcanzó el rango de coronel, y también como oficial en la oficina del Sheriff del Condado de Benton y durante 14 años en la legislatura estatal.
+
+Su capacidad para comunicarse eficazmente, resolver problemas complejos, trabajar bajo presión y enseñar a los estudiantes que lo rodean con amabilidad y amor por su comunidad, creo que lo califica plenamente para desempeñarse en el cargo de Sheriff. Apoyo plenamente su decisión de postularse para el cargo de Sheriff del Condado de Benton y estoy segura de que sobresaldrá al dirigir a los hombres y mujeres del departamento del Sheriff del Condado de Benton.`
+}
+
+];
+
+let currentEndorsement = 0;
+
+function showEndorsement() {
+const item = endorsements[currentEndorsement];
+
+if(item.type === "image") {
+document.getElementById("endorsement-content").innerHTML = `
+<img src="${item.image}" style="max-width:450px; width:100%; border-radius:10px; margin-bottom:20px;">
+<h3>${item.title}</h3>
+<p>${item.text}</p>
+`;
+} else {
+document.getElementById("endorsement-content").innerHTML = `
+<h3>${item.title}</h3>
+<p style="text-align:left; line-height:1.8;">
+${item.text}
+</p>
+`;
+}
+}
+
+function nextEndorsement() {
+currentEndorsement = (currentEndorsement + 1) % endorsements.length;
+showEndorsement();
+}
+
+function previousEndorsement() {
+currentEndorsement = (currentEndorsement - 1 + endorsements.length) % endorsements.length;
+showEndorsement();
+}
+
+showEndorsement();
+
+</script>
   <div class="card" style="text-align:center;">
     <img src="Klippert.png" style="max-width:450px; width:100%; border-radius:10px; margin-bottom:20px;">
 
