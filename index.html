@@ -6,121 +6,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body { margin:0; font-family:Arial,sans-serif; background:#f4f4f4; color:#222; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
 
     header {
-      background:#0b1f3a;
-      text-align:center;
-      padding:25px 20px;
-      border-bottom:5px solid #c8a64d;
+      background: #0b1f3a;
+      text-align: center;
+      padding: 25px 20px;
+      border-bottom: 5px solid #c8a64d;
     }
 
     header h1 {
-      color:white;
-      margin:0;
-      font-size:32px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:15px;
-      flex-wrap:wrap;
+      color: white;
+      margin: 0;
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     .badge-logo {
-      width:135px;
-      height:auto;
-      object-fit:contain;
+      width: 135px;
+      height: auto;
+      object-fit: contain;
     }
 
     nav {
-      margin-top:18px;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      gap:20px;
-      flex-wrap:wrap;
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     nav a {
-      color:#c8a64d;
-      text-decoration:none;
-      font-weight:bold;
-      font-size:18px;
+      color: #c8a64d;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
     }
 
     .social-icon {
-      width:28px;
-      height:auto;
+      width: 28px;
+      height: auto;
     }
 
     .hero {
-      background:linear-gradient(to right,#0b1f3a,#1e3a5f);
-      color:white;
-      text-align:center;
-      padding:60px 20px;
+      background: linear-gradient(to right, #0b1f3a, #1e3a5f);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
     }
 
-    .hero h2 { font-size:46px; margin-bottom:10px; }
-    .hero p { font-size:22px; margin-bottom:25px; }
+    .hero h2 {
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
 
     .brad-photo {
-      width:240px;
-      max-width:240px;
-      height:auto;
-      border-radius:12px;
-      border:4px solid #c8a64d;
-      margin-bottom:25px;
+      width: 240px;
+      max-width: 240px;
+      height: auto;
+      border-radius: 12px;
+      border: 4px solid #c8a64d;
+      margin-bottom: 25px;
     }
 
     button {
-      background:#c8a64d;
-      color:#0b1f3a;
-      border:none;
-      padding:14px 28px;
-      font-size:18px;
-      border-radius:6px;
-      font-weight:bold;
-      cursor:pointer;
-      margin:6px;
+      background: #c8a64d;
+      color: #0b1f3a;
+      border: none;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 6px;
     }
 
-    .section { max-width:1000px; margin:auto; padding:50px 20px; }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+    }
 
     .section h2 {
-      color:#0b1f3a;
-      border-bottom:3px solid #c8a64d;
-      padding-bottom:10px;
-      margin-bottom:25px;
+      color: #0b1f3a;
+      border-bottom: 3px solid #c8a64d;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
     }
 
     .card {
-      background:white;
-      padding:25px;
-      border-radius:10px;
-      margin-bottom:20px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
-      line-height:1.7;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      line-height: 1.7;
     }
 
     .testimonial-text {
-      font-style:italic;
-      font-size:17px;
-      line-height:1.7;
-      text-align:left;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.8;
+      text-align: left;
+      white-space: pre-line;
     }
 
-    form input, form select, form textarea {
-      font-family:Arial,sans-serif;
-      font-size:16px;
+    .endorsement-image {
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
     }
 
     footer {
-      background:#0b1f3a;
-      color:white;
-      text-align:center;
-      padding:25px;
-      margin-top:40px;
-      border-top:5px solid #c8a64d;
+      background: #0b1f3a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      border-top: 5px solid #c8a64d;
     }
   </style>
 </head>
@@ -130,7 +158,7 @@
 <header>
   <h1>
     Brad Klippert for Benton County Sheriff
-    <img src="badge.png.png" class="badge-logo">
+    <img src="badge.png.png" class="badge-logo" alt="Campaign badge">
   </h1>
 
   <nav>
@@ -139,13 +167,22 @@
     <a href="#priorities">Priorities</a>
     <a href="#endorsements">Endorsements</a>
     <a href="#contact">Contact</a>
-<a href="spanish.html">Español</a>
+    <a href="spanish.html">Español</a>
+
     <a href="https://www.facebook.com/share/19qyConXNx/?mibextid=wwXIfr" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="social-icon">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+        class="social-icon"
+        alt="Facebook"
+      >
     </a>
 
     <a href="https://www.instagram.com/brad.klippert4sheriff?utm_source=qr" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="social-icon">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+        class="social-icon"
+        alt="Instagram"
+      >
     </a>
   </nav>
 </header>
@@ -154,7 +191,7 @@
   <h2>Proven Leadership. Safer Communities.</h2>
   <p>Experienced. Trusted. Ready to serve Benton County.</p>
 
-  <img src="brad.jpg.jpeg" class="brad-photo">
+  <img src="brad.jpg.jpeg" class="brad-photo" alt="Brad Klippert">
 
   <br>
 
@@ -170,107 +207,77 @@
 <div class="section">
 
   <h2 id="about">About Brad</h2>
+
   <div class="card">
     <p>Brad Klippert has dedicated his life to serving the people of Benton County, Washington State, and our nation through law enforcement, military leadership, and public service. Brad has served as a Benton County Sheriff’s Deputy since 1999, with experience in patrol, investigations, community safety, and as a School Resource Officer for the Kiona-Benton City School District. Prior to joining Benton County, he also served as a deputy in Pierce County.</p>
+
     <p>In addition to his law enforcement career, Brad served more than 30 years in the military, including 20 years as a helicopter pilot, retiring as a Colonel and Commander in the Washington State Guard. His leadership experience includes emergency response coordination, personnel management, and operational command.</p>
+
     <p>Brad also represented Washington’s 8th Legislative District for 14 years in the Washington State House of Representatives, where he worked on public safety, criminal justice, veterans’ affairs, and education issues.</p>
+
     <p>A longtime Kennewick resident, Brad’s career has been built on service, leadership, and a commitment to safer communities throughout Benton County.</p>
   </div>
 
   <h2 id="priorities">Priorities</h2>
+
   <div class="card">✔ Strengthen public safety and community policing</div>
   <div class="card">✔ Support law enforcement recruitment and retention</div>
   <div class="card">✔ Protect Benton County families and neighborhoods</div>
   <div class="card">✔ Build trust through leadership, accountability, and service</div>
 
-<h2 id="endorsements">Endorsements</h2>
+  <h2 id="endorsements">Endorsements</h2>
 
-<div class="card" style="text-align:center;">
+  <div class="card" style="text-align:center;">
+    <div id="endorsement-content"></div>
 
-  <div id="endorsement-content"></div>
+    <button type="button" onclick="previousEndorsement()" aria-label="Previous endorsement">
+      ←
+    </button>
 
-  <button onclick="previousEndorsement()">←</button>
-  <button onclick="nextEndorsement()">→</button>
-
-</div>
-
-<script>
-
-const endorsements = [
-
-{
-type: "image",
-image: "Klippert.png",
-title: "Stand For Health Freedom",
-text: "Endorses Brad Klippert for Benton County Sheriff."
-},
-
-{
-type: "text",
-title: "Mikaela Strech",
-text: `I have known Deputy Brad Klippert for 29 years, and I know him to be an honest and trustworthy individual. I have had the privilege to work with Brad Klippert at Kiona-Benton High School for the past two years. He is always checking in on me to see how my children and I are doing. I am just a janitor at the school, but he sees me and makes time in his day for me.
-
-Deputy Brad Klippert has always demonstrated exceptional leadership, professionalism, and dedication. Deputy Klippert has successfully led careers in the Army National Guard, where he achieved the rank of Colonel, as a Sheriff Deputy for the Benton County Sheriff's Office, and through 14 years in the state legislature.
-
-His ability to communicate effectively, solve complex problems, work under pressure, and teach students around him with kindness and love for his community fully qualifies him to serve as Sheriff. I fully support his decision in running for Benton County Sheriff and am confident he will excel in leading the men and women of the Benton County Sheriff's Office.`
-}
-
-];
-
-let currentEndorsement = 0;
-
-function showEndorsement() {
-
-const item = endorsements[currentEndorsement];
-
-if(item.type === "image") {
-
-document.getElementById("endorsement-content").innerHTML = `
-<img src="${item.image}" style="max-width:450px; width:100%; border-radius:10px; margin-bottom:20px;">
-<h3>${item.title}</h3>
-<p>${item.text}</p>
-`;
-
-} else {
-
-document.getElementById("endorsement-content").innerHTML = `
-<h3>${item.title}</h3>
-<p style="text-align:left; line-height:1.8;">
-${item.text}
-</p>
-`;
-
-}
-
-}
-
-function nextEndorsement() {
-currentEndorsement = (currentEndorsement + 1) % endorsements.length;
-showEndorsement();
-}
-
-function previousEndorsement() {
-currentEndorsement = (currentEndorsement - 1 + endorsements.length) % endorsements.length;
-showEndorsement();
-}
-
-showEndorsement();
-
-</script>
+    <button type="button" onclick="nextEndorsement()" aria-label="Next endorsement">
+      →
+    </button>
+  </div>
 
   <h2 id="contact">Get Involved</h2>
+
   <div class="card">
     <h3>Volunteer for the Campaign</h3>
+
     <p>Join Brad Klippert’s campaign team and help support safer communities throughout Benton County.</p>
+
     <p>Email: Bradklippert4sheriff@gmail.com</p>
     <p>Mailing Address: P.O. Box 5323, Kennewick, WA 99336</p>
 
     <form action="https://formspree.io/f/xojbpygd" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
-      <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
-      <input type="text" name="phone" placeholder="Phone Number" style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+      <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required
+        style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;"
+      >
 
-      <select name="interest" required style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+        style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;"
+      >
+
+      <input
+        type="text"
+        name="phone"
+        placeholder="Phone Number"
+        style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;"
+      >
+
+      <select
+        name="interest"
+        required
+        style="width:100%; padding:14px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;"
+      >
         <option value="">How would you like to help?</option>
         <option>Door Knocking</option>
         <option>Yard Signs</option>
@@ -279,7 +286,11 @@ showEndorsement();
         <option>General Volunteer</option>
       </select>
 
-      <textarea name="message" placeholder="Message" style="width:100%; padding:14px; height:140px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;"></textarea>
+      <textarea
+        name="message"
+        placeholder="Message"
+        style="width:100%; padding:14px; height:140px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;"
+      ></textarea>
 
       <button type="submit">Volunteer Now</button>
     </form>
@@ -291,5 +302,176 @@ showEndorsement();
   <p>Paid for by Brad Klippert for Sheriff</p>
 </footer>
 
+<script>
+  const endorsements = [
+    {
+      type: "image",
+      image: "Croskey.png",
+      alt: "Retired Benton County Sheriff Tom Croskrey endorses Brad Klippert for Benton County Sheriff",
+      title: "Tom Croskrey",
+      text: "Retired Benton County Sheriff Tom Croskrey endorses Brad Klippert for Benton County Sheriff."
+    },
+
+    {
+      type: "image",
+      image: "Klippert.png",
+      alt: "Stand for Health Freedom endorses Brad Klippert",
+      title: "Stand for Health Freedom",
+      text: "Endorses Brad Klippert for Benton County Sheriff."
+    },
+
+    {
+      type: "text",
+      title: "Mikaela Strech",
+      text: `I have known Deputy Brad Klippert for 29 years, and I know him to be an honest and trustworthy individual. I have had the privilege to work with Brad Klippert at Kiona-Benton High School for the past two years. He is always checking in on me to see how my children and I are doing. I am just a janitor at the school, but he sees me and makes time in his day for me.
+
+Deputy Brad Klippert has always demonstrated exceptional leadership, professionalism, and dedication. Deputy Klippert has successfully led careers in the Army National Guard, where he achieved the rank of Colonel, as a Sheriff Deputy for the Benton County Sheriff's Office, and through 14 years in the state legislature.
+
+His ability to communicate effectively, solve complex problems, work under pressure, and teach students around him with kindness and love for his community fully qualifies him to serve as Sheriff. I fully support his decision in running for Benton County Sheriff and am confident he will excel in leading the men and women of the Benton County Sheriff's Office.`
+    },
+
+    {
+      type: "text",
+      title: "Joe Cotta",
+      subtitle: "Pasco City Council Member and Pastor",
+      text: `Brad Klippert is an honest man with an unbelievable work ethic. He has a tried-and-true record of Christian conservative leadership and a state legislature voting record that demonstrates that he will stick to his convictions, even in trying circumstances.
+
+He’s a principled, proven leader and a great candidate for Benton County Sheriff.`
+    },
+
+    {
+      type: "text",
+      title: "Jeff Kruger",
+      text: `Years ago, when Brad was a member of the House, my wife and I met him at an HBA event. Not long after, there was an incident at our son's school that concerned us. It was a Second Amendment matter. We contacted Brad. He immediately jumped into action, and it was all resolved very quickly to our satisfaction.
+
+He didn't delegate; he handled it himself. Our son, whom he helped, is now a law enforcement officer. Brad proved to us that he cares about citizens. He didn't seek any fanfare or publicity. He just quietly did what he felt was right. I believe that says a tremendous amount about his character.`
+    },
+
+    {
+      type: "text",
+      title: "Diane McCants",
+      text: `I worked in a clerical capacity for the Benton County Sheriff’s Office and Benton County Corrections for a little over 18 years. I am very familiar with Benton County Deputy Brad Klippert. He is a joy to work with. He is a man of his word and genuinely cares for the citizens of Benton County.
+
+Whether he’s talking with a citizen who needs assistance or teens who may need some guidance and/or support, he’s always willing to help, yet he’s always professional. Deputy Klippert truly cares about the people he serves and would be an excellent choice for Benton County Sheriff.`
+    },
+
+    {
+      type: "text",
+      title: "Julie Barrett",
+      subtitle: "Founder, Conservative Ladies of America",
+      text: `It is my honor to give my full endorsement to Brad Klippert for Benton County Sheriff.
+
+In 2021, after our family had a horrific experience with Washington’s youth mental health system, Brad reached out and offered to help in any way he could. He helped our family navigate that system and encouraged me to use our experience to advocate for legislation that would protect other families from the harm ours had endured.
+
+Since then, Brad has become a dear friend and a mentor, helping to shape my work in public policy.
+
+As a 14-year legislator for the 8th Legislative District, Brad had a strong record sponsoring and voting for legislation to strengthen law enforcement and public safety.
+
+I don’t know anyone more committed to upholding the Constitution than Brad. He truly has a servant’s heart and love for all people.
+
+Now more than ever, Washington state needs strong, courageous leaders who are willing to stand for truth, justice, public safety, and the constitutional rights of the people they are elected to serve. Brad Klippert has the integrity, conviction, and servant leadership Benton County needs in its next Sheriff. I am proud to endorse him and encourage others to support him as well.`
+    },
+
+    {
+      type: "text",
+      title: "Todd Carlson",
+      subtitle: "BCSO Retired",
+      text: `To the Citizens of Benton County,
+
+I am proud to endorse Brad Klippert for Benton County Sheriff. Brad has dedicated his life to serving others, and his experience, leadership, and integrity make him exceptionally qualified to lead the Benton County Sheriff’s Office.
+
+Brad has served as a Benton County Deputy Sheriff for 27 years, where he earned the respect of fellow deputies and the community through his professionalism, sound judgment, and unwavering commitment to public safety. He understands the unique needs of Benton County because he has spent nearly three decades protecting its citizens.
+
+In addition to his law enforcement career, Brad served 28 years in the United States Army National Guard, retiring at the rank of Lt. Colonel (O-5). His military service reflects a lifetime of disciplined leadership, strategic decision-making, and a commitment to serving something greater than himself.
+
+Brad also served 14 years as a representative in the Washington State House of Representatives, 8th District, where he worked to strengthen public safety, support families, and represent the interests of the people of our region. His experience in state government gives him valuable insight into building partnerships and ensuring law enforcement has the resources needed to keep our communities safe.
+
+Brad also holds a bachelor’s degree in behavioral science from Northwest University and a master’s degree in teaching from City University in Seattle.
+
+Throughout every chapter of his life, Brad has been guided by enduring principles that place faith first, duty before self, and family at the center of community. Those values have shaped his decisions, his leadership, and his commitment to serving others with humility and integrity.
+
+Benton County deserves a Sheriff who leads by example, respects the rule of law, values every member of the community, and has a proven record of service. Brad Klippert has demonstrated those qualities throughout his career in law enforcement, military service, and public office.
+
+I encourage every voter to support Brad Klippert for Benton County Sheriff.`
+    },
+
+    {
+      type: "text",
+      title: "Joe Lloyd",
+      subtitle: "Benton City, WA",
+      text: `Dear Voters,
+
+I am pleased to write this letter of support for the election of Brad Klippert as Benton County Sheriff. I have known Brad for many years and count him as a friend and someone I can rely on. As a former school administrator in the Kiona-Benton City School District, I had many interactions with Brad when he was our school resource officer.
+
+I can say without reservation that Brad is a person of integrity and honor. He treats all people in a respectful manner. With Brad, what you see is what you get. He has no hidden agendas.
+
+For those who abide by the law, Brad is a loyal friend and defender of the innocent. For those who find themselves frequently in conflict with the law, Brad is more than an irritant to them; he is despised. To me, this is the greatest evidence of Brad’s character. He stands firmly on the side of the law and faithfully does his duty to enforce it!
+
+Since one’s character is not like a jacket you can put on and take off at will, I appreciate knowing Brad’s reputation for decades. He is consistent in his convictions. I trust Brad Klippert. I will be voting for him, and I hope that you will also.
+
+There will be no controversies or upheavals if Brad is at the helm. He is from the ranks and is an honest and ethical man!`
+    }
+  ];
+
+  let currentEndorsement = 0;
+
+  function escapeEndorsementText(value) {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function showEndorsement() {
+    const item = endorsements[currentEndorsement];
+    const content = document.getElementById("endorsement-content");
+
+    const title = escapeEndorsementText(item.title);
+
+    const subtitle = item.subtitle
+      ? `<p style="font-weight:bold; margin-top:-8px;">${escapeEndorsementText(item.subtitle)}</p>`
+      : "";
+
+    const text = escapeEndorsementText(item.text);
+
+    if (item.type === "image") {
+      content.innerHTML = `
+        <img
+          src="${escapeEndorsementText(item.image)}"
+          alt="${escapeEndorsementText(item.alt || item.title)}"
+          class="endorsement-image"
+        >
+        <h3>${title}</h3>
+        ${subtitle}
+        <p>${text}</p>
+      `;
+    } else {
+      content.innerHTML = `
+        <h3>${title}</h3>
+        ${subtitle}
+        <p class="testimonial-text">${text}</p>
+      `;
+    }
+  }
+
+  function nextEndorsement() {
+    currentEndorsement =
+      (currentEndorsement + 1) % endorsements.length;
+
+    showEndorsement();
+  }
+
+  function previousEndorsement() {
+    currentEndorsement =
+      (currentEndorsement - 1 + endorsements.length) % endorsements.length;
+
+    showEndorsement();
+  }
+
+  showEndorsement();
+</script>
+
 </body>
-</html> 
+</html>
